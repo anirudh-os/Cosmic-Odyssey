@@ -1,35 +1,91 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-}
-
-body{
+    font-family: Arial, sans-serif;
     background-color: #070f2b;
+    overflow-x: hidden;
+    color: #fff;
 }
 
 #hero {
     position: relative;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
 }
 
 #hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 0; /* This will make sure the video is behind the content */
-    margin: 0;
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-#header {
-    position: relative;
-    z-index: 1; /* Ensures the header is on top of the video */
-    background-color: transparent; /* Ensure header background does not obscure the video */
-    padding: 20px; /* Example padding */
+#hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    color: whitesmoke;
 }
+
+#hero-overlay h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#hero-overlay p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+#cards {
+    
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
