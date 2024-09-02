@@ -4,44 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Odyssey</title>
-    <link rel="stylesheet" href="../css/styles1.css">
+    <link rel="stylesheet" href="../sample project/styles.css">
 </head>
 <body>
     
     <!-- HERO SECTION -->
     <div id="hero">
-         <!-- LOGO SVG-->
-    <div id="header">
-        <img id="logo" src="#" alt="logo">
-        <span> cosmic</span>
-        <div id="details" >
-            <a href="#">contact us</a>
-            <a href="#">About us</a>
+        <div id="header">
+            <img id="logo" src="#" alt="logo">
+            <span>cosmic</span>
+            <div id="details">
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+            </div>
+            <!-- NAVBAR -->
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#">First Link</a></li>
+                    <li><a href="#">Second Link</a></li>
+                </ul>       
+            </nav>
+        </div> 
+        <video autoplay muted loop id="hero-video">
+            <source src="../project/wp/Cosmic-Odyssey/assets/WhatsApp Video 2024-09-02 at 14.57.27.mp4" type="video/mp4">
+            Your video
+        </video>
+        <div id="hero-overlay">
+            <h1>Welcome to Cosmic Odyssey</h1>
+            <p>Random into or text if u want to add any.</p>
+            <a href="#cards" class="cta-button">Explore More</a>
         </div>
-    <!-- NAVBAR -->
-        <nav id="navbar">
-            <ul>list
-                <li ><a href="#">firstlink</a></li>
-                <li><a href="#">sec link</a></li> 
-            </ul>       
-        </nav>
-    </div> 
-            <video autoplay muted loop id="hero-video">
-              <source src="../assets/WhatsApp Video 2024-09-02 at 14.57.27.mp4" type="video/mp4"><!-- add your hero element video here-->
-              Your video
-            </video>
     </div>
+    
     <!-- CARDS -->
-    <div id="CARDS">
-        <div class="card">card 1</div>
-        <div class="card">card 2</div>
-        <div class="card">card 3</div>
-        <div class="card">card 4</div>
-        <div class="card">card 5</div>
+    <div id="cards">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
     </div>
+    
     <!-- FOOTER -->
     <div id="footer">
-        footer
+        <p>&copy; footer</p>
     </div>
+    
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
+
