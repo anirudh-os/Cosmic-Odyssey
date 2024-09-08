@@ -28,11 +28,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    
-    
     transform: translate(-50%, -50%);
     text-align: center;
-
     color: whitesmoke;
 }
 
@@ -63,7 +60,6 @@ body {
 }
 
 #cards {
-    
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -88,4 +84,100 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+.footer {
+    background-color: #535c91;
+}
 
+#navbar {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    color: #fff;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: none; /* Hides the contents of the sidebar */
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+#details {
+    margin-left: auto;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#details a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    color: #fff;
+}
+
+#details a:hover {
+    color: #f1f1f1;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Odyssey</title>
+    <link rel="stylesheet" href="css/styles1.css">
+</head>
+<body>
+    
+    <!-- HERO SECTION -->
+    <div id="hero">
+        <div id="header">
+            <img id="logo" src="./assets/logo.svg" alt="logo">
+            <div id="details">
+                <a href="#">Contact</a> 
+                <a href="#">About</a>
+            </div>
+        </div> 
+        <video autoplay muted loop id="hero-video" preload="auto">
+            <source src="assets/Space2.mp4" type="video/mp4">
+        </video>
+        
+        <div id="hero-overlay">
+            <h1>Welcome to Cosmic Odyssey</h1>
+            <p>Random intro or text if you want to add any.</p>
+            <a href="#cards" class="cta-button">Explore More</a>
+        </div>
+        <!-- NAVBAR -->
+        <nav id="navbar">
+            <div class="navbar-container">
+                <button class="hamburger" id="hamburger">☰</button>
+            </div>
+            <!-- Sidebar Menu -->
+            <div id="sidebar" class="sidebar">
+                <button class="closebtn" id="closebtn">&times;</button>
+                <a href="#">Home</a>
+                <a href="#">Trending</a>
+                <a href="#">Subscriptions</a>
+                <a href="#">Library</a>
+                <a href="#">History</a>
+                <a href="#">Your Videos</a>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- CARDS -->
+    <div id="cards">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+    </div>
+    
+    <!-- FOOTER -->
+    <div id="footer">
+        <p>&copy; Cosmic Odyssey</p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.min.js" async></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

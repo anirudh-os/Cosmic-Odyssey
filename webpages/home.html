@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Odyssey</title>
-    <link rel="stylesheet" href="../sample project/styles.css">
+    <link rel="stylesheet" href="..\css\styles1.css">
 </head>
 <body>
     
@@ -17,23 +17,34 @@
                 <a href="#">Contact Us</a>
                 <a href="#">About Us</a>
             </div>
-            <!-- NAVBAR -->
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#">First Link</a></li>
-                    <li><a href="#">Second Link</a></li>
-                </ul>       
-            </nav>
         </div> 
         <video autoplay muted loop id="hero-video">
-            <source src="../project/wp/Cosmic-Odyssey/assets/WhatsApp Video 2024-09-02 at 14.57.27.mp4" type="video/mp4">
-            Your video
+            <source src="..\assets\Space2.mp4" type="video/mp4">
         </video>
+        
         <div id="hero-overlay">
             <h1>Welcome to Cosmic Odyssey</h1>
             <p>Random into or text if u want to add any.</p>
             <a href="#cards" class="cta-button">Explore More</a>
         </div>
+        <!-- NAVBAR -->
+        <nav id="navbar">
+            <div class="navbar-container">
+                <button class="hamburger" id="hamburger">
+                    ☰
+                </button>
+            </div>
+            <!-- Sidebar Menu -->
+            <div id="sidebar" class="sidebar">
+                <button class="closebtn" id="closebtn">&times;</button>
+                <a href="#">Home</a>
+                <a href="#">Trending</a>
+                <a href="#">Subscriptions</a>
+                <a href="#">Library</a>
+                <a href="#">History</a>
+                <a href="#">Your Videos</a>
+            </div>
+        </nav>
     </div>
     
     <!-- CARDS -->
@@ -47,9 +58,10 @@
     
     <!-- FOOTER -->
     <div id="footer">
-        <p>&copy; footer</p>
+        <p>&copy; Cosmic Odyssey</p>
     </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.min.js"></script>
     <script src="../js/scripts.js"></script>
 </body>
 </html>
