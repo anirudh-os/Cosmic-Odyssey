@@ -28,11 +28,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    
-    
     transform: translate(-50%, -50%);
     text-align: center;
-
     color: whitesmoke;
 }
 
@@ -63,7 +60,6 @@ body {
 }
 
 #cards {
-    
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -136,7 +132,7 @@ body {
     text-decoration: none;
     font-size: 25px;
     color: #fff;
-    display: block;
+    display: none; /* Hides the contents of the sidebar */
     transition: 0.3s;
 }
 
@@ -155,5 +151,33 @@ body {
 
 #header {
     display: flex;
-    align-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+#details {
+    margin-left: auto;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#details a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    color: #fff;
+}
+
+#details a:hover {
+    color: #f1f1f1;
 }

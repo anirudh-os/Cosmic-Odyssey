@@ -1,21 +1,8 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
 document.addEventListener("DOMContentLoaded", function () {
     const video = document.getElementById('hero-video');
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     const colorThief = new ColorThief();
-    
-    // List of videos to play sequentially
-    //const videos = ["../assets/Space2.mp4", "../assets/Space3.mp4"];
-    //let currentVideoIndex = 0;
 
     // Function to lighten or darken color
     function adjustColorBrightness(rgb, percent) {
@@ -42,33 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
         };
     }
 
-    // Extract color every 2 seconds
-    video.addEventListener('play', () => {
-        setInterval(() => {
-            if (!video.paused && !video.ended) {
-                extractColor();
-            }
-        }, 1);
-    });
+    // Extract color when the video metadata is loaded and ready
+    video.addEventListener('loadeddata', extractColor);
 
-    // Handle video ending
-    //video.addEventListener('ended', function () {
-        //console.log('Video ended. Changing to the next video.');
-        //currentVideoIndex = (currentVideoIndex + 1) % videos.length;
-       // console.log('Switching to video:', videos[currentVideoIndex]);
-        //video.src = videos[currentVideoIndex];
-       // video.load(); // Ensure the video element reloads the new source
-       // video.play();
-   // });
-
-    // Set initial video
-   // video.src = videos[currentVideoIndex];
-   // video.load(); // Ensure the video element is properly loaded
-
-    
-});
-
-document.addEventListener("DOMContentLoaded", function () {
+    // Sidebar toggle functionality
     const hamburger = document.getElementById('hamburger');
     const sidebar = document.getElementById('sidebar');
     const closebtn = document.getElementById('closebtn');
