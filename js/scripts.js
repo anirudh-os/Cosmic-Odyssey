@@ -6,3 +6,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+document.addEventListener("contextmenu",hidemenu);
+function hidemenu(e)
+{
+    e.preventDefault();
+}
