@@ -40,13 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.addEventListener('click', function () {
         sidebar.style.width = '250px';
     });
-});
-document.addEventListener("contextmenu", hidemenu);
-function hidemenu(e) {
-    e.preventDefault();
-}
 
-closebtn.addEventListener('click', function () {
-    sidebar.style.width = '0';
+    closebtn.addEventListener('click', function () {
+        sidebar.style.width = '0';
+    });
 });
-
