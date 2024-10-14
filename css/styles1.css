@@ -1,12 +1,141 @@
+/* General Reset */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #070f2b;
-    overflow-x: hidden;
     color: #fff;
 }
 
+/* Logo Section */
+#logo-header {
+    display: inline-flex;
+    justify-content: center;
+    justify-self: center;
+    padding: 5px 0;
+    margin: 0;
+}
+
+#logo {
+    height: 100px;
+    width: auto;
+    margin: 0;
+}
+
+/* Navbar Styling */
+#navbar {
+    background-color: #1a2b4c; /* Color blending with hero */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+
+/* Navbar container with reduced width */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    width: 100%; /* Full width to ensure proper alignment */
+    padding: 0;
+    position: relative;
+}
+
+/* Hamburger button to the extreme left */
+.hamburger {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px; /* Positioned to the far left */
+}
+
+/* Logo styling: centered within navbar */
+#logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 100px;
+    position:relative /* This keeps it centered */
+}
+
+#logo {
+        height: 60px;left: 50%;
+    margin-top: 0px;
+}
+
+#logo-header p {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0;
+}
+
+/* Sidebar and details */
+#details {
+    display: flex;
+    gap: 15px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+#details a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#details a:hover {
+    color: #f1f1f1;
+}
+
+/* Sidebar styling for menu */
+.sidebar {
+    height: 100%;
+    width: 0px;
+    max-width: 175px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#1a2b4c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.hamburger:hover {  
+    color: #f1f1f1;
+}
+
+/* Hero Section */
 #hero {
     position: relative;
     height: 100vh;
@@ -33,48 +162,25 @@ body {
     color: whitesmoke;
 }
 
-#hero-overlay h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-#hero-overlay p {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #2980b9;
-}
-
+/* Cards Section */
 #cards {
     display: flex;
     justify-content: center;
     padding: 20px;
+    top: 90%;
 }
 
 .card {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     background-color: #3498db;
     border-radius: 10px;
     margin: 10px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     color: #fff;
+    padding: 10px;
     font-size: 1.5em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -84,100 +190,19 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-.footer {
-    background-color: #535c91;
-}
-
-#navbar {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-
-.navbar-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.hamburger {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-    margin-right: 20px;
-}
-
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: 0.3s;
-    padding-top: 60px;
-    color: #fff;
-}
-
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
-    display: none; /* Hides the contents of the sidebar */
-    transition: 0.3s;
-}
-
-.sidebar a:hover {
-    color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 36px;
-    margin-left: 50px;
-    cursor: pointer;
-}
-
-#header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#logo {
-    height: 100px;
+.card > img {
     width: 100px;
-    position: absolute;
-    top: 0;
-    left: 5px;
+    height: 100px;
+    position: relative;
+    display: block;
+    padding-bottom: 5px;
+
 }
 
-#details {
-    margin-left: auto;
-    position: absolute;
-    top: 5px;
-    right: 15px;
-}
-
-#details a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 15px;
-    display: inline-block;
+/* Footer Section */
+#footer {
+    background-color: #1a2b4c;
+    text-align: center;
+    padding: 10px;
     color: #fff;
-}
-
-#details a:hover {
-    color: #f1f1f1;
 }
