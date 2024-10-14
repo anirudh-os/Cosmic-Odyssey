@@ -7,16 +7,32 @@
     <link rel="stylesheet" href="css/styles1.css">
 </head>
 <body>
-    
-    <!-- HERO SECTION -->
-    <div id="hero">
-        <div id="header">
-            <img id="logo" src="./assets/logo2.svg" alt="logo">
+   <!-- LOGO AND NAVBAR -->
+    <nav id="navbar">
+        <div class="navbar-container">
+            <button class="hamburger" id="hamburger">☰</button>
+            <header id="logo-header">
+                <img id="logo" src="./assets/logo2.svg" alt="logo">
+                <p>Cosmic Odyssey</p>
+            </header>
             <div id="details">
                 <a href="#">Contact</a> 
                 <a href="#">About</a>
+                <button class="button">sign Up</button>
+                <button class="button">Sign In</button>
             </div>
-        </div> 
+        </div>
+        <!-- Sidebar Menu -->
+        <div id="sidebar" class="sidebar">
+            <button class="closebtn" id="closebtn">&times;</button>
+            <a href="#">Community</a>
+            <a href="#">Resources</a>
+            <a href="#">News</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div id="hero">
         <video autoplay muted loop id="hero-video" preload="auto">
             <source src="assets/Space2.mp4" type="video/mp4">
         </video>
@@ -26,31 +42,18 @@
             <p>Random intro or text if you want to add any.</p>
             <a href="#cards" class="cta-button">Explore More</a>
         </div>
-        <!-- NAVBAR -->
-        <nav id="navbar">
-            <div class="navbar-container">
-                <button class="hamburger" id="hamburger">☰</button>
-            </div>
-            <!-- Sidebar Menu -->
-            <div id="sidebar" class="sidebar">
-                <button class="closebtn" id="closebtn">&times;</button>
-                <a href="#">Home</a>
-                <a href="#">Trending</a>
-                <a href="#">Subscriptions</a>
-                <a href="#">Library</a>
-                <a href="#">History</a>
-                <a href="#">Your Videos</a>
-            </div>
-        </nav>
     </div>
-    
+
     <!-- CARDS -->
     <div id="cards">
-        <div class="card">Card 1</div>
-        <div class="card">Card 2</div>
-        <div class="card">Card 3</div>
-        <div class="card">Card 4</div>
-        <div class="card">Card 5</div>
+        <div class="card" id="card1">
+            <img src="#">
+            TON 618
+            <p></p>
+        </div>
+        <div class="card" id="card2">MILKY WAY</div>
+        <div class="card" id="card3">PLANETS</div>
+        
     </div>
     
     <!-- FOOTER -->
