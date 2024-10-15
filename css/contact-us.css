@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../assets/satellite.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    width: 60%;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.7); /* Slight transparency for better visibility over the image */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #070f2b; /* Dark color for better contrast */
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+.creator {
+    margin-bottom: 15px;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.creator > p > span:hover {
+    color: rgba(9, 29, 116, 0.763) !important;
+    cursor: pointer;
+}
