@@ -7,5 +7,5 @@ document.getElementById("closebtn").addEventListener("click", function () {
 });
 
 document.getElementById("sign_in").addEventListener("click", function () {
-    window.location.href = "Cosmic-Odyssey/Sign_in_page.html";
+    window.location.href = "./Sign_in_page.html";
 });
