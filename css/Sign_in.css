@@ -70,4 +70,11 @@ button {
 .links a {
     display: block;
     margin-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.links a:hover {
+    color: orange;
+    text-decoration: underline;
 }
