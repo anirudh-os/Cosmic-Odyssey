@@ -1,16 +1,167 @@
+/* General Reset */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #070f2b;
-    overflow-x: hidden;
     color: #fff;
 }
 
+/* Logo Section */
+#logo-header {
+    display: inline-flex;
+    justify-content: center;
+    justify-self: center;
+    padding: 5px 0;
+    margin: 0;
+}
+
+#logo {
+    height: 100px;
+    width: auto;
+    margin: 0;
+}
+
+/* Navbar Styling */
+#navbar {
+    background-color: #6d7c9a; /* Color blending with hero */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+
+/* Navbar container with reduced width */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    width: 100%; /* Full width to ensure proper alignment */
+    padding: 0;
+    position: relative;
+}
+
+/* Hamburger button to the extreme left */
+.hamburger {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px; /* Positioned to the far left */
+}
+
+/* Logo styling: centered within navbar */
+#logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 100px;
+    position:relative /* This keeps it centered */
+}
+
+#logo {
+        height: 60px;left: 50%;
+    margin-top: 0px;
+}
+
+#logo-header p {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0;
+}
+
+/* Sidebar and details */
+#details {
+    display: flex;
+    gap: 15px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+#details a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#details a:hover {
+    color: #f1f1f1;
+}
+
+#nav_info {
+    padding-top: 3px;
+    display: flex;
+}
+#nav_info :nth-child(1) {
+    margin-right: 20px;  
+}
+
+#nav_info :nth-child(2) {
+    margin-right: 20px;  
+}
+.button {
+    padding: 3px 9px 3px 9px;
+    border-radius: 8px;
+}
+
+#sign_in {
+    background-color: #1a2b4c;
+    color: azure;
+    border: 1px solid white;
+}
+/* Sidebar styling for menu */
+.sidebar {
+    height: 100%;
+    width: 0px;
+    max-width: 175px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#1a2b4c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.hamburger:hover {  
+    color: #f1f1f1;
+}
+
+/* Hero Section */
 #hero {
     position: relative;
     height: 100vh;
     width: 100vw;
+    font-size: 140%;
     overflow: hidden;
 }
 
@@ -26,69 +177,63 @@ body {
 
 #hero-overlay {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
-    
-    
     transform: translate(-50%, -50%);
     text-align: center;
-
     color: whitesmoke;
 }
 
-#hero-overlay h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-#hero-overlay p {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+    background-color:rgb(90, 90, 225);
+    padding: 7px 7px;
+    border-radius: 20px;
+    color: #f1f1f1;
 }
 
-.cta-button:hover {
-    background-color: #2980b9;
-}
-
+/* Cards Section */
 #cards {
-    
     display: flex;
     justify-content: center;
     padding: 20px;
+    top: 90%;
 }
 
 .card {
-    width: 200px;
-    height: 200px;
-    background-color: #3498db;
+    width: 500px;
+    height: 300px;
+    background-color: #1a2b4c;
     border-radius: 10px;
     margin: 10px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 1.5em;
+    padding: 10px;
+    font-size: 1.1em;
+    /* font-size: 18px; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-.footer {
-    background-color: #535c91;
+.card > img {
+    width: 250px;
+    height: 160px;
+    position: relative;
+    display: block;
+    padding-bottom: 5px;
+
 }
 
+/* Footer Section */
+#footer {
+    background-color: #6d7c9a;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}

@@ -1,13 +1,7 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+document.getElementById("hamburger").addEventListener("click", function () {
+    document.getElementById("sidebar").style.width = "175px";
 });
-document.addEventListener("contextmenu",hidemenu);
-function hidemenu(e)
-{
-    e.preventDefault();
-}
+
+document.getElementById("closebtn").addEventListener("click", function () {
+    document.getElementById("sidebar").style.width = "0";
+});
