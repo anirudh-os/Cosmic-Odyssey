@@ -9,3 +9,7 @@ document.getElementById("closebtn").addEventListener("click", function () {
 document.getElementById("sign_in").addEventListener("click", function () {
     window.location.href = "./webpages/Sign_in_page.html";
 });
+
+document.getElementById("sign_up").addEventListener("click", function () {
+    window.location.href = "./webpages/Sign_up_page.html";
+});
