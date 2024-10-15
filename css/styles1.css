@@ -9,6 +9,7 @@ body {
 
 /* Logo Section */
 #logo-header {
+    left: 6%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +17,11 @@ body {
     margin: 0 auto;
     position: relative; /* Centering the logo */
     padding-left: 100px; /* Keeps it centered */
+}
+
+#logo-header p {
+    font-size: 1.5rem;
+    color: black;
 }
 
 #logo {

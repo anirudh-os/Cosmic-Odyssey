@@ -1,22 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../assets/satellite.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
     padding: 20px;
 }
 
 .container {
-    max-width: 800px;
+    width: 60%;
+    max-width: 1200px;
     margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7); /* Slight transparency for better visibility over the image */
+    padding: 40px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
+    color: #070f2b; /* Dark color for better contrast */
 }
 
 .contact-info {
@@ -40,4 +47,9 @@ h1 {
 
 .social-media a:hover {
     text-decoration: underline;
+}
+
+.creator > p > span:hover {
+    color: rgba(9, 29, 116, 0.763) !important;
+    cursor: pointer;
 }
