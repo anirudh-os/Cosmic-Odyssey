@@ -1,0 +1,71 @@
+/* General Reset */
+body {
+    width: 100%; /* Changed to 100% for proper scaling */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #070f2b; /* Fallback color if video fails */
+    color: #fff;
+}
+
+/* Video Background */
+#background-video {
+    position: fixed; /* Change to fixed to keep the video in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%; /* Use viewport width */
+    height: 100%; /* Use viewport height */
+    object-fit: cover; /* Cover the entire area */
+    z-index: -1; /* Send the video behind other content */
+    filter: brightness(1);
+}
+
+/* Navbar and other styles remain the same... */
+
+/* Cards Section */
+#cards {
+    display: flex;
+    flex-direction: column; /* Arrange rows in a column */
+    align-items: center; /* Center the rows horizontally */
+    position: relative; /* Ensure cards are positioned above the video */
+    z-index: 1; /* Bring cards above the video */
+}
+
+/* Additional card styles... */
+
+
+.row {
+    display: flex; /* Use flex for rows */
+    justify-content: center; /* Center cards within each row */
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(26, 43, 76, 0.85);
+    /* filter: brightness(1.5); */
+    border-radius: 10px;
+    margin: 25px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.1em;
+    font-size: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card >img {
+    width: 250px;
+    border-image: round;
+    filter: brightness(1.2);
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+/* 
+#card1 {
+    
+} */
