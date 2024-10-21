@@ -17,13 +17,13 @@ body, html {
     object-position: center bottom;
 }
 
-.login-container {
+.signup-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: whitesmoke;
-    padding: 30px;
+    padding: 40px;
     border-radius: 10px;
     width: 270px;
 }
@@ -72,9 +72,4 @@ button {
     margin-bottom: 5px;
     text-decoration: none;
     color: #000;
-}
-
-.links a:hover {
-    color: orange;
-    text-decoration: underline;
 }
