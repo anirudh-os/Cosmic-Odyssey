@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="../css/styles1.css"> 
+    <link rel="stylesheet" href="../css/explore.css"> 
+    
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>	
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="../assets/Space1.mp4" type="video/mp4"> 
+        Your browser does not support the video tag.
+    </video>
+    <nav id="navbar">
+        <div class="navbar-container">
+            <button class="hamburger" id="hamburger">☰</button>
+            <header id="logo-header">
+                <img id="logo" src="../assets/logo2.svg" alt="logo">
+                <p>Cosmic Odyssey</p>
+            </header>
+            <div id="details">
+                <div id="nav_info">
+                    <a href="#">Contact</a> 
+                    <a href="#">About</a>
+                </div>
+                
+                <button id="sign_up" class="button">Sign Up</button>
+                <button id="sign_in" class="button">Sign In</button>
+            </div>
+        </div>
+        <div id="sidebar" class="sidebar">
+            <button class="closebtn" id="closebtn">&times;</button>
+            <a href="#">Community</a>
+            <a href="#">Resources</a>
+            <a href="#">News</a>
+        </div>
+    </nav>
+
+    <div id="cards"></div>
+
+    <div id="footer">
+        <p>&copy; Cosmic Odyssey</p>
+    </div>
+
+    <script type="text/babel">
+        class Card extends React.Component {
+            render() {
+                return (
+                    <div className="card" id={this.props.id}>
+                        <img src={this.props.imageSrc} alt={this.props.id} className="card-image" />
+                        <div className="card-content"> 
+                            <p>{this.props.id}<br/><br/>{this.props.content}</p> {/* Display the content here */}
+                        </div>
+                    </div>
+                );
+            }
+        }
+
+        const App = () => {
+            const cards = [
+                { id: "Alpha-Centauri", imageSrc: "../assets/Alpha-Centauri.jpg", content: "SUN Explore the Universe!" },
+                { id: "Sirius", imageSrc: "../assets/Sirius-Star.jpg", content: "Discover New Galaxies!" },
+                { id: "Andromeda-Galaxy", imageSrc: "../assets/Andromeda-Galaxy.jpg", content: "Unlock the Secrets of Space!" },
+                { id: "Triangulum-Galaxy", imageSrc: "../assets/Triangulum-Galaxy.jpg", content: "Join the Cosmic Adventure!" },
+                { id: "Whirlpool-Galaxy", imageSrc: "../assets/whirlpool-galaxy.webp", content: "Experience Stellar Phenomena!" },
+                { id: "Crab-Nebula", imageSrc: "../assets/crab-nebula.webp", content: "Embrace the Wonders of the Cosmos!" },
+                { id: "Magellanic-Cloud", imageSrc: "../assets/explore.jpg", content: "Journey Beyond the Stars!" },
+                { id: "Polaris", imageSrc: "../assets/Polaris.webp", content: "Expand Your Horizons!" },
+                { id: "Betelgeuse", imageSrc: "../assets/Betelgeuse.jpg", content: "Venture into the Unknown!" }
+            ];
+
+            const rows = [];
+            for (let i = 0; i < cards.length; i += 3) {
+                rows.push(
+                    <div className="row" key={i}>
+                        <Card id={cards[i].id} imageSrc={cards[i].imageSrc} content={cards[i].content} />
+                        {cards[i + 1] && <Card id={cards[i + 1].id} imageSrc={cards[i + 1].imageSrc} content={cards[i + 1].content} />}
+                        {cards[i + 2] && <Card id={cards[i + 2].id} imageSrc={cards[i + 2].imageSrc} content={cards[i + 2].content} />}
+                    </div> 
+                );
+            }
+
+            return <div>{rows}</div>;
+        };
+
+        ReactDOM.render(<App />, document.getElementById('cards'));
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.min.js" async></script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
