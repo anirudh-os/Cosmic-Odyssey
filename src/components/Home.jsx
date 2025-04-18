@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../css/styles1.css";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import logo from "../assets/logo2.svg";
-import spaceVideo from "../assets/Space2.mp4";
+import spaceVideo from "../assets/Space1.mp4";
 import ton618 from "../assets/ton618.webp";
 import milkyWay from "../assets/milky_way.jpg";
 import mars from "../assets/mars.jpg";
@@ -68,13 +68,13 @@ function Home() {
           <source src={spaceVideo} type="video/mp4" />
         </video>
         <div id="hero-overlay">
-          <h1>Welcome to Cosmic Odyssey</h1>
-          <p>Random intro or text if you want to add any.</p>
+          <h1 style={{color:"ghostwhite",}}>Welcome to Cosmic Odyssey</h1>
+          <p style={{color:"black",fontWeight:"20px"}}>Your Space Encyclopedia</p>
           <a
             href="#"
             className="cta-button"
             onClick={handleExploreMoreClick} // Attach the click handler
-          >
+            >
             Explore More
           </a>
         </div>
@@ -186,7 +186,7 @@ function Home() {
         </div>
       )}
 
-      <div id="footer">
+      <div className="footer">
         <p>&copy; Cosmic Odyssey</p>
       </div>
     </div>

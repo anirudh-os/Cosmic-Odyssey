@@ -1,14 +1,18 @@
 /* Common card page styles */
 .card-page {
-  background: #1a2b4c; /* Light blue-purple gradient */
-  font-family: Arial, sans-serif;
-  color: white;
+  /* background: #132549; Light blue-purple gradient */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  height: 0px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   min-height: 100vh; /* Ensure the page fills the height */
 }
-
+h1{
+text-align: center;
+color: #ded5af;
+}
 #card-content {
   padding: 20px;
   text-align: center;
@@ -25,10 +29,10 @@
 
 /* Wrapper for the description and image */
 .card-description-wrapper {
-  background: rgba(255, 255, 255, 0.2); /* Translucent background */
+  background: rgba(255, 255, 255, 0.6); /* Translucent background */
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 1.3);
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -39,7 +43,7 @@
 .card-description {
   flex: 2;
   max-width: 700px;
-  color: #ddd;
+  color: #3a3a39;
   font-size: 1.1rem;
   line-height: 1.6;
   margin-top: 10px;
@@ -63,6 +67,17 @@
   object-fit: cover;
   margin-top: 0;
   margin-bottom: 20px;
+  filter: brightness(1.2);
+}
+
+.Back-video {
+  width: 100%;
+  height: 148%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /* Button styling */
@@ -83,10 +98,11 @@
 
 /* Footer styling */
 #footer {
-  background-color: #333;
-  color: white;
+  
+  background-color: #425478;
   text-align: center;
   padding: 10px;
-  /* Footer is naturally at the bottom if content overflows */
-  margin-top: auto; /* Push footer to the bottom when content fills the page */
+  color: #fff8dc;
+  margin-top: auto;
+  bottom: 0%;
 }

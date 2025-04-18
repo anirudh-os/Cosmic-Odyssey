@@ -1,10 +1,14 @@
 import React from "react";
 import "../css/common_card.css"; // Link to the separate CSS file
 import magellanicCloudImage from "../assets/Magellanic-Cloud.webp"; // Corrected to match file name
+import spaceVideo from "../assets/Space1.mp4";
 
 function MagellanicCloud() {
   return (
     <div className="card-page">
+      <video autoPlay muted loop className="Back-video" preload="auto" style={{height:"146%"}}>
+          <source src={spaceVideo} type="video/mp4" />
+        </video>
       <div id="card-content">
         <div className="card-header">
           <h1>Magellanic Clouds</h1>

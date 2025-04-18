@@ -60,7 +60,7 @@ function SignUp() {
             <img src={loginImage} alt="user icon" />
           </div>
           <form onSubmit={handleSubmit}>
-            <label htmlFor="firstName">First Name</label>
+            <label htmlFor="firstName" style={{color:"black"}}>First Name</label>
             <input
               type="text"
               id="firstName"
@@ -70,7 +70,7 @@ function SignUp() {
               onChange={(e) => setFirstName(e.target.value)}
             />
 
-            <label htmlFor="lastName">Last Name</label>
+            <label htmlFor="lastName" style={{color:"black"}}>Last Name</label>
             <input
               type="text"
               id="lastName"
@@ -79,7 +79,7 @@ function SignUp() {
               onChange={(e) => setLastName(e.target.value)}
             />
 
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" style={{color:"black"}}>Email</label>
             <input
               type="email"
               id="email"
@@ -89,7 +89,7 @@ function SignUp() {
               onChange={(e) => setEmail(e.target.value)}
             />
 
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password" style={{color:"black"}}>Password</label>
             <input
               type="password"
               id="password"

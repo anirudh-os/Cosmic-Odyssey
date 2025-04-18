@@ -1,5 +1,6 @@
 .background-container {
     height: 100%;
+    box-shadow: 10px;
 }
 
 .background-container {
@@ -48,7 +49,7 @@ form {
 input {
     margin-bottom: 15px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid black;
     border-radius: 5px;
     font-size: 14px;
 }
@@ -60,6 +61,10 @@ button {
     border-radius: 5px;
     font-size: 16px;
     margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: darkslategrey;
 }
 
 .links {

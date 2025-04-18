@@ -2,10 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/common_card.css"; // Link to the separate CSS file
 import marsImage from "../assets/mars.jpg"; // Update to the correct image path
+import spaceVideo from "../assets/Space1.mp4";
 
 function Mars() {
   return (
     <div className="card-page">
+      <video autoPlay muted loop className="Back-video" preload="auto" style={{height:"120%"}}>
+          <source src={spaceVideo} type="video/mp4" />
+        </video>
       <div id="card-content">
         <div className="card-header">
           <h1>Mars</h1>

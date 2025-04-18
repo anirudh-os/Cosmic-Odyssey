@@ -2,11 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/common_card.css"; // Link to the separate CSS file
 import milkyway from "../assets/milky_way.jpg"; // Update to the correct image path
-
+import spaceVideo from "../assets/Space1.mp4";
 
 function MilkyWay() {
   return (
     <div className="card-page">
+      <video autoPlay muted loop className="Back-video" preload="auto" style={{height:"146%"}}>
+          <source src={spaceVideo} type="video/mp4" />
+        </video>
       <div id="card-content">
         <div className="card-header">
           <h1>The Milky Way</h1>
@@ -44,7 +47,7 @@ function MilkyWay() {
         </div>
       </div>
 
-      <div id="footer">
+      <div id="footer" style={{bottom:"0px",marginBottom:"0px"}}>
         <p>&copy; Cosmic Odyssey</p>
       </div>
     </div>

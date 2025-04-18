@@ -3,10 +3,14 @@ import { Link } from "react-router-dom";
 import "../css/common_card.css"; // Link to the separate CSS file
 
 import ton618 from "../assets/ton618.webp"; // Image for TON 618
+import spaceVideo from "../assets/Space1.mp4";
 
 function TON_618() {
   return (
     <div className="card-page">
+      <video autoPlay muted loop className="Back-video" preload="auto">
+          <source src={spaceVideo} type="video/mp4" />
+        </video>
       <div id="card-content">
         <div className="card-header">
           <h1>TON 618</h1>
@@ -58,7 +62,7 @@ function TON_618() {
         </div>
       </div>
 
-      <div id="footer">
+      <div id="footer" style={{bottom:"10px"}}>
         <p>&copy; Cosmic Odyssey</p>
       </div>
     </div>

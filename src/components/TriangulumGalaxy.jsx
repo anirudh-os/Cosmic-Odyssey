@@ -2,10 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/common_card.css"; // Link to the separate CSS file
 import triangulumImage from "../assets/Triangulum-Galaxy.jpg"; // Corrected to match file name
+import spaceVideo from "../assets/Space1.mp4";
 
 function TriangulumGalaxy() {
   return (
     <div className="card-page">
+      <video autoPlay muted loop className="Back-video" preload="auto" style={{height:"125%"}}>
+          <source src={spaceVideo} type="video/mp4" />
+        </video>
       <div id="card-content">
         <div className="card-header">
           <h1>Triangulum Galaxy (M33)</h1>

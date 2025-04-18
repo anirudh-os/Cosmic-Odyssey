@@ -59,7 +59,7 @@ function SignIn() {
             <img src={loginImage} alt="man" />
           </div>
           <form onSubmit={handleSubmit}>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" style={{color:"black"}}>Email</label>
             <input
               type="email"
               id="email"
@@ -68,7 +68,7 @@ function SignIn() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password" style={{color:"black"}}>Password</label>
             <input
               type="password"
               id="password"

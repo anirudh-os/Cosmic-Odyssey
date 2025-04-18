@@ -9,7 +9,7 @@ function Contact() {
   return (
     <div className="contact_body" style={{ backgroundImage: `url(${Contact_img})` }}>
       <div className="container">
-        <h1>Contact Us</h1>
+        <h1 style={{color:"black"}}>Contact Us</h1>
         
         <div className="contact-info">
             <div className="creator">
